@@ -108,8 +108,8 @@ def main():
     y_final = cal_objvalue(np.array([final_best[0]]))
     plt.plot(x_final, y_final, "r*", markersize=10)
     plt.title("Genetic Algorithm Optimization")
-    plt.show()
     plt.savefig("ga.jpg")
+    plt.show()
 
     print(f"The best X is --->> {binary2decimal(np.array([final_best[0]]))[0]:.2f}")
     print(f"The best Y is --->> {final_best[1]:.2f}")
